@@ -12,6 +12,13 @@ pip install torch pyhealth numpy pandas scikit-learn tqdm matplotlib dill joblib
 
 ## Reproduce Results
 
+Place the pre-built MIMIC-III datasets at:
+
+```
+data/mimic3/processed_data/drug_rec_ts/processed_data.pkl
+data/mimic3/processed_data/diag_pred_ts/processed_data.pkl
+```
+
 ```bash
 python evaluate.py --ckpt ./best_model/best_model.ckpt
 ```

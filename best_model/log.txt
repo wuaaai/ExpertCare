@@ -1,0 +1,500 @@
+parameter of dataset:
+--- Task 0 (drug_rec) ---
+patient_num: 15407
+visit_num: 18557
+cond_num: 273
+drug_num: 195
+proc_num: 204
+lab_num: 669
+inj_num: 279
+avg_visit: 1.2044525215810995
+avg_cond: 12.719297300210163
+avg_proc: 3.3713962386161556
+avg_drug: 34.252627041008786
+
+--- Task 1 (diag_pred) ---
+patient_num: 15407
+visit_num: 18557
+cond_num: 272
+drug_num: 196
+proc_num: 204
+lab_num: 669
+inj_num: 279
+avg_visit: 1.2044525215810995
+avg_cond: 12.719297300210163
+avg_proc: 3.3713962386161556
+avg_drug: 34.252627041008786 
+--------------------------------------
+args params:
+epochs : 50
+test_epochs : 10
+lr : 0.0005
+model : Multi_DT
+device_id : 0
+seed : 222
+dataset : mimic3
+task : multi_task
+batch_size : 16
+dim : 128
+dropout : 0.6
+developer : False
+test : False
+notes : 2025-11-10_00-41-05_batch_size16_lr5e-4_dim128_dropout0.6_gamma0.2_step37_datasetmimic3
+scheduler : True
+gamma : 0.2
+step_size : 37
+trans_num_heads : 4
+trans_num_layers : 4
+--------------------------------------
+Epoch 1
+Train Loss: 0.0807
+Validation Loss: drug_rec: 0.3699, diag_pred: 0.4270
+=== Task: drug_rec ===
+F1: 0.6382, Jaccard: 0.4687, ROC-AUC: 0.9125, PR-AUC: 0.7249
+=== Task: diag_pred ===
+F1: 0.3775, Jaccard: 0.2327, ROC-AUC: 0.8944, PR-AUC: 0.3752
+Run_Time: 244.873
+--------------------------------------
+Epoch 2
+Train Loss: 0.0763
+Validation Loss: drug_rec: 0.3702, diag_pred: 0.4140
+=== Task: drug_rec ===
+F1: 0.6431, Jaccard: 0.4739, ROC-AUC: 0.9157, PR-AUC: 0.7327
+=== Task: diag_pred ===
+F1: 0.3955, Jaccard: 0.2465, ROC-AUC: 0.9028, PR-AUC: 0.4006
+Run_Time: 243.689
+--------------------------------------
+Epoch 3
+Train Loss: 0.0750
+Validation Loss: drug_rec: 0.3640, diag_pred: 0.4134
+=== Task: drug_rec ===
+F1: 0.6505, Jaccard: 0.4820, ROC-AUC: 0.9187, PR-AUC: 0.7410
+=== Task: diag_pred ===
+F1: 0.4014, Jaccard: 0.2511, ROC-AUC: 0.9059, PR-AUC: 0.4140
+Run_Time: 244.435
+--------------------------------------
+Epoch 4
+Train Loss: 0.0743
+Validation Loss: drug_rec: 0.3643, diag_pred: 0.4096
+=== Task: drug_rec ===
+F1: 0.6485, Jaccard: 0.4799, ROC-AUC: 0.9194, PR-AUC: 0.7415
+=== Task: diag_pred ===
+F1: 0.4124, Jaccard: 0.2597, ROC-AUC: 0.9088, PR-AUC: 0.4235
+Run_Time: 242.715
+--------------------------------------
+Epoch 5
+Train Loss: 0.0736
+Validation Loss: drug_rec: 0.3530, diag_pred: 0.4026
+=== Task: drug_rec ===
+F1: 0.6555, Jaccard: 0.4876, ROC-AUC: 0.9207, PR-AUC: 0.7464
+=== Task: diag_pred ===
+F1: 0.4157, Jaccard: 0.2624, ROC-AUC: 0.9106, PR-AUC: 0.4336
+Run_Time: 248.185
+--------------------------------------
+Epoch 6
+Train Loss: 0.0731
+Validation Loss: drug_rec: 0.3613, diag_pred: 0.3988
+=== Task: drug_rec ===
+F1: 0.6536, Jaccard: 0.4855, ROC-AUC: 0.9223, PR-AUC: 0.7493
+=== Task: diag_pred ===
+F1: 0.4158, Jaccard: 0.2624, ROC-AUC: 0.9116, PR-AUC: 0.4360
+Run_Time: 240.623
+--------------------------------------
+Epoch 7
+Train Loss: 0.0728
+Validation Loss: drug_rec: 0.3496, diag_pred: 0.3984
+=== Task: drug_rec ===
+F1: 0.6554, Jaccard: 0.4874, ROC-AUC: 0.9211, PR-AUC: 0.7474
+=== Task: diag_pred ===
+F1: 0.4169, Jaccard: 0.2634, ROC-AUC: 0.9123, PR-AUC: 0.4384
+Run_Time: 248.123
+--------------------------------------
+Epoch 8
+Train Loss: 0.0724
+Validation Loss: drug_rec: 0.3503, diag_pred: 0.3952
+=== Task: drug_rec ===
+F1: 0.6570, Jaccard: 0.4893, ROC-AUC: 0.9227, PR-AUC: 0.7511
+=== Task: diag_pred ===
+F1: 0.4255, Jaccard: 0.2702, ROC-AUC: 0.9136, PR-AUC: 0.4446
+Run_Time: 243.990
+--------------------------------------
+Epoch 9
+Train Loss: 0.0721
+Validation Loss: drug_rec: 0.3445, diag_pred: 0.3901
+=== Task: drug_rec ===
+F1: 0.6578, Jaccard: 0.4901, ROC-AUC: 0.9223, PR-AUC: 0.7501
+=== Task: diag_pred ===
+F1: 0.4279, Jaccard: 0.2722, ROC-AUC: 0.9145, PR-AUC: 0.4488
+Run_Time: 243.851
+--------------------------------------
+Epoch 10
+Train Loss: 0.0718
+Validation Loss: drug_rec: 0.3513, diag_pred: 0.3847
+=== Task: drug_rec ===
+F1: 0.6563, Jaccard: 0.4884, ROC-AUC: 0.9233, PR-AUC: 0.7528
+=== Task: diag_pred ===
+F1: 0.4250, Jaccard: 0.2698, ROC-AUC: 0.9144, PR-AUC: 0.4478
+Run_Time: 243.953
+--------------------------------------
+Epoch 11
+Train Loss: 0.0717
+Validation Loss: drug_rec: 0.3495, diag_pred: 0.3876
+=== Task: drug_rec ===
+F1: 0.6574, Jaccard: 0.4897, ROC-AUC: 0.9230, PR-AUC: 0.7523
+=== Task: diag_pred ===
+F1: 0.4270, Jaccard: 0.2714, ROC-AUC: 0.9153, PR-AUC: 0.4525
+Run_Time: 244.307
+--------------------------------------
+Epoch 12
+Train Loss: 0.0714
+Validation Loss: drug_rec: 0.3471, diag_pred: 0.3856
+=== Task: drug_rec ===
+F1: 0.6619, Jaccard: 0.4946, ROC-AUC: 0.9244, PR-AUC: 0.7545
+=== Task: diag_pred ===
+F1: 0.4306, Jaccard: 0.2743, ROC-AUC: 0.9157, PR-AUC: 0.4540
+Run_Time: 246.962
+--------------------------------------
+Epoch 13
+Train Loss: 0.0711
+Validation Loss: drug_rec: 0.3501, diag_pred: 0.3821
+=== Task: drug_rec ===
+F1: 0.6629, Jaccard: 0.4957, ROC-AUC: 0.9236, PR-AUC: 0.7530
+=== Task: diag_pred ===
+F1: 0.4256, Jaccard: 0.2703, ROC-AUC: 0.9158, PR-AUC: 0.4549
+Run_Time: 241.626
+--------------------------------------
+Epoch 14
+Train Loss: 0.0710
+Validation Loss: drug_rec: 0.3520, diag_pred: 0.3818
+=== Task: drug_rec ===
+F1: 0.6592, Jaccard: 0.4916, ROC-AUC: 0.9237, PR-AUC: 0.7540
+=== Task: diag_pred ===
+F1: 0.4318, Jaccard: 0.2754, ROC-AUC: 0.9164, PR-AUC: 0.4569
+Run_Time: 246.961
+--------------------------------------
+Epoch 15
+Train Loss: 0.0708
+Validation Loss: drug_rec: 0.3434, diag_pred: 0.3790
+=== Task: drug_rec ===
+F1: 0.6618, Jaccard: 0.4946, ROC-AUC: 0.9243, PR-AUC: 0.7552
+=== Task: diag_pred ===
+F1: 0.4332, Jaccard: 0.2765, ROC-AUC: 0.9164, PR-AUC: 0.4584
+Run_Time: 245.086
+--------------------------------------
+Epoch 16
+Train Loss: 0.0706
+Validation Loss: drug_rec: 0.3490, diag_pred: 0.3883
+=== Task: drug_rec ===
+F1: 0.6597, Jaccard: 0.4922, ROC-AUC: 0.9232, PR-AUC: 0.7526
+=== Task: diag_pred ===
+F1: 0.4286, Jaccard: 0.2727, ROC-AUC: 0.9167, PR-AUC: 0.4588
+Run_Time: 242.590
+--------------------------------------
+Epoch 17
+Train Loss: 0.0704
+Validation Loss: drug_rec: 0.3463, diag_pred: 0.3800
+=== Task: drug_rec ===
+F1: 0.6581, Jaccard: 0.4904, ROC-AUC: 0.9235, PR-AUC: 0.7523
+=== Task: diag_pred ===
+F1: 0.4333, Jaccard: 0.2766, ROC-AUC: 0.9164, PR-AUC: 0.4616
+Run_Time: 244.821
+--------------------------------------
+Epoch 18
+Train Loss: 0.0703
+Validation Loss: drug_rec: 0.3513, diag_pred: 0.3796
+=== Task: drug_rec ===
+F1: 0.6598, Jaccard: 0.4923, ROC-AUC: 0.9243, PR-AUC: 0.7548
+=== Task: diag_pred ===
+F1: 0.4352, Jaccard: 0.2781, ROC-AUC: 0.9171, PR-AUC: 0.4616
+Run_Time: 244.318
+--------------------------------------
+Epoch 19
+Train Loss: 0.0702
+Validation Loss: drug_rec: 0.3525, diag_pred: 0.3748
+=== Task: drug_rec ===
+F1: 0.6591, Jaccard: 0.4916, ROC-AUC: 0.9244, PR-AUC: 0.7559
+=== Task: diag_pred ===
+F1: 0.4333, Jaccard: 0.2766, ROC-AUC: 0.9177, PR-AUC: 0.4629
+Run_Time: 243.800
+--------------------------------------
+Epoch 20
+Train Loss: 0.0700
+Validation Loss: drug_rec: 0.3441, diag_pred: 0.3750
+=== Task: drug_rec ===
+F1: 0.6626, Jaccard: 0.4954, ROC-AUC: 0.9244, PR-AUC: 0.7557
+=== Task: diag_pred ===
+F1: 0.4382, Jaccard: 0.2806, ROC-AUC: 0.9178, PR-AUC: 0.4648
+Run_Time: 243.648
+20 epoch Model saved !!!
+--------------------------------------
+Epoch 21
+Train Loss: 0.0699
+Validation Loss: drug_rec: 0.3456, diag_pred: 0.3730
+=== Task: drug_rec ===
+F1: 0.6621, Jaccard: 0.4949, ROC-AUC: 0.9244, PR-AUC: 0.7568
+=== Task: diag_pred ===
+F1: 0.4367, Jaccard: 0.2793, ROC-AUC: 0.9180, PR-AUC: 0.4657
+Run_Time: 244.393
+--------------------------------------
+Epoch 22
+Train Loss: 0.0698
+Validation Loss: drug_rec: 0.3383, diag_pred: 0.3758
+=== Task: drug_rec ===
+F1: 0.6606, Jaccard: 0.4932, ROC-AUC: 0.9240, PR-AUC: 0.7546
+=== Task: diag_pred ===
+F1: 0.4364, Jaccard: 0.2791, ROC-AUC: 0.9180, PR-AUC: 0.4669
+Run_Time: 247.253
+--------------------------------------
+Epoch 23
+Train Loss: 0.0695
+Validation Loss: drug_rec: 0.3483, diag_pred: 0.3754
+=== Task: drug_rec ===
+F1: 0.6590, Jaccard: 0.4914, ROC-AUC: 0.9240, PR-AUC: 0.7553
+=== Task: diag_pred ===
+F1: 0.4372, Jaccard: 0.2797, ROC-AUC: 0.9183, PR-AUC: 0.4676
+Run_Time: 237.904
+--------------------------------------
+Epoch 24
+Train Loss: 0.0694
+Validation Loss: drug_rec: 0.3420, diag_pred: 0.3793
+=== Task: drug_rec ===
+F1: 0.6618, Jaccard: 0.4946, ROC-AUC: 0.9241, PR-AUC: 0.7551
+=== Task: diag_pred ===
+F1: 0.4365, Jaccard: 0.2792, ROC-AUC: 0.9184, PR-AUC: 0.4686
+Run_Time: 247.534
+--------------------------------------
+Epoch 25
+Train Loss: 0.0693
+Validation Loss: drug_rec: 0.3472, diag_pred: 0.3738
+=== Task: drug_rec ===
+F1: 0.6608, Jaccard: 0.4934, ROC-AUC: 0.9238, PR-AUC: 0.7558
+=== Task: diag_pred ===
+F1: 0.4378, Jaccard: 0.2803, ROC-AUC: 0.9184, PR-AUC: 0.4671
+Run_Time: 244.053
+--------------------------------------
+Epoch 26
+Train Loss: 0.0691
+Validation Loss: drug_rec: 0.3500, diag_pred: 0.3729
+=== Task: drug_rec ===
+F1: 0.6598, Jaccard: 0.4923, ROC-AUC: 0.9244, PR-AUC: 0.7551
+=== Task: diag_pred ===
+F1: 0.4392, Jaccard: 0.2814, ROC-AUC: 0.9188, PR-AUC: 0.4702
+Run_Time: 243.405
+--------------------------------------
+Epoch 27
+Train Loss: 0.0691
+Validation Loss: drug_rec: 0.3452, diag_pred: 0.3679
+=== Task: drug_rec ===
+F1: 0.6630, Jaccard: 0.4959, ROC-AUC: 0.9243, PR-AUC: 0.7553
+=== Task: diag_pred ===
+F1: 0.4406, Jaccard: 0.2825, ROC-AUC: 0.9191, PR-AUC: 0.4702
+Run_Time: 243.919
+--------------------------------------
+Epoch 28
+Train Loss: 0.0689
+Validation Loss: drug_rec: 0.3412, diag_pred: 0.3730
+=== Task: drug_rec ===
+F1: 0.6644, Jaccard: 0.4974, ROC-AUC: 0.9248, PR-AUC: 0.7584
+=== Task: diag_pred ===
+F1: 0.4369, Jaccard: 0.2795, ROC-AUC: 0.9190, PR-AUC: 0.4697
+Run_Time: 243.975
+--------------------------------------
+Epoch 29
+Train Loss: 0.0688
+Validation Loss: drug_rec: 0.3476, diag_pred: 0.3761
+=== Task: drug_rec ===
+F1: 0.6654, Jaccard: 0.4985, ROC-AUC: 0.9247, PR-AUC: 0.7556
+=== Task: diag_pred ===
+F1: 0.4393, Jaccard: 0.2814, ROC-AUC: 0.9189, PR-AUC: 0.4706
+Run_Time: 245.281
+--------------------------------------
+Epoch 30
+Train Loss: 0.0687
+Validation Loss: drug_rec: 0.3443, diag_pred: 0.3640
+=== Task: drug_rec ===
+F1: 0.6599, Jaccard: 0.4924, ROC-AUC: 0.9232, PR-AUC: 0.7505
+=== Task: diag_pred ===
+F1: 0.4398, Jaccard: 0.2819, ROC-AUC: 0.9189, PR-AUC: 0.4703
+Run_Time: 242.328
+--------------------------------------
+Epoch 31
+Train Loss: 0.0684
+Validation Loss: drug_rec: 0.3421, diag_pred: 0.3677
+=== Task: drug_rec ===
+F1: 0.6605, Jaccard: 0.4931, ROC-AUC: 0.9227, PR-AUC: 0.7543
+=== Task: diag_pred ===
+F1: 0.4398, Jaccard: 0.2819, ROC-AUC: 0.9190, PR-AUC: 0.4704
+Run_Time: 246.434
+--------------------------------------
+Epoch 32
+Train Loss: 0.0684
+Validation Loss: drug_rec: 0.3449, diag_pred: 0.3680
+=== Task: drug_rec ===
+F1: 0.6610, Jaccard: 0.4936, ROC-AUC: 0.9241, PR-AUC: 0.7538
+=== Task: diag_pred ===
+F1: 0.4409, Jaccard: 0.2828, ROC-AUC: 0.9189, PR-AUC: 0.4729
+Run_Time: 246.336
+--------------------------------------
+Epoch 33
+Train Loss: 0.0682
+Validation Loss: drug_rec: 0.3408, diag_pred: 0.3664
+=== Task: drug_rec ===
+F1: 0.6632, Jaccard: 0.4961, ROC-AUC: 0.9244, PR-AUC: 0.7553
+=== Task: diag_pred ===
+F1: 0.4379, Jaccard: 0.2804, ROC-AUC: 0.9193, PR-AUC: 0.4720
+Run_Time: 242.301
+--------------------------------------
+Epoch 34
+Train Loss: 0.0683
+Validation Loss: drug_rec: 0.3450, diag_pred: 0.3627
+=== Task: drug_rec ===
+F1: 0.6615, Jaccard: 0.4942, ROC-AUC: 0.9241, PR-AUC: 0.7531
+=== Task: diag_pred ===
+F1: 0.4443, Jaccard: 0.2856, ROC-AUC: 0.9190, PR-AUC: 0.4732
+Run_Time: 245.098
+--------------------------------------
+Epoch 35
+Train Loss: 0.0679
+Validation Loss: drug_rec: 0.3401, diag_pred: 0.3634
+=== Task: drug_rec ===
+F1: 0.6626, Jaccard: 0.4954, ROC-AUC: 0.9246, PR-AUC: 0.7542
+=== Task: diag_pred ===
+F1: 0.4412, Jaccard: 0.2830, ROC-AUC: 0.9192, PR-AUC: 0.4727
+Run_Time: 243.697
+--------------------------------------
+Epoch 36
+Train Loss: 0.0679
+Validation Loss: drug_rec: 0.3408, diag_pred: 0.3640
+=== Task: drug_rec ===
+F1: 0.6592, Jaccard: 0.4916, ROC-AUC: 0.9223, PR-AUC: 0.7496
+=== Task: diag_pred ===
+F1: 0.4447, Jaccard: 0.2860, ROC-AUC: 0.9194, PR-AUC: 0.4750
+Run_Time: 243.625
+--------------------------------------
+Epoch 37
+Train Loss: 0.0679
+Validation Loss: drug_rec: 0.3459, diag_pred: 0.3636
+=== Task: drug_rec ===
+F1: 0.6622, Jaccard: 0.4950, ROC-AUC: 0.9242, PR-AUC: 0.7558
+=== Task: diag_pred ===
+F1: 0.4439, Jaccard: 0.2852, ROC-AUC: 0.9190, PR-AUC: 0.4748
+Run_Time: 244.203
+--------------------------------------
+Epoch 38
+Train Loss: 0.0670
+Validation Loss: drug_rec: 0.3374, diag_pred: 0.3632
+=== Task: drug_rec ===
+F1: 0.6649, Jaccard: 0.4980, ROC-AUC: 0.9241, PR-AUC: 0.7550
+=== Task: diag_pred ===
+F1: 0.4449, Jaccard: 0.2861, ROC-AUC: 0.9198, PR-AUC: 0.4772
+Run_Time: 243.933
+--------------------------------------
+Epoch 39
+Train Loss: 0.0668
+Validation Loss: drug_rec: 0.3399, diag_pred: 0.3609
+=== Task: drug_rec ===
+F1: 0.6648, Jaccard: 0.4979, ROC-AUC: 0.9239, PR-AUC: 0.7544
+=== Task: diag_pred ===
+F1: 0.4461, Jaccard: 0.2871, ROC-AUC: 0.9199, PR-AUC: 0.4783
+Run_Time: 247.141
+--------------------------------------
+Epoch 40
+Train Loss: 0.0664
+Validation Loss: drug_rec: 0.3427, diag_pred: 0.3588
+=== Task: drug_rec ===
+F1: 0.6633, Jaccard: 0.4962, ROC-AUC: 0.9244, PR-AUC: 0.7537
+=== Task: diag_pred ===
+F1: 0.4461, Jaccard: 0.2871, ROC-AUC: 0.9202, PR-AUC: 0.4784
+Run_Time: 239.668
+40 epoch Model saved !!!
+--------------------------------------
+Epoch 41
+Train Loss: 0.0664
+Validation Loss: drug_rec: 0.3432, diag_pred: 0.3612
+=== Task: drug_rec ===
+F1: 0.6632, Jaccard: 0.4961, ROC-AUC: 0.9238, PR-AUC: 0.7517
+=== Task: diag_pred ===
+F1: 0.4443, Jaccard: 0.2856, ROC-AUC: 0.9201, PR-AUC: 0.4788
+Run_Time: 247.253
+--------------------------------------
+Epoch 42
+Train Loss: 0.0662
+Validation Loss: drug_rec: 0.3396, diag_pred: 0.3612
+=== Task: drug_rec ===
+F1: 0.6643, Jaccard: 0.4973, ROC-AUC: 0.9235, PR-AUC: 0.7510
+=== Task: diag_pred ===
+F1: 0.4451, Jaccard: 0.2862, ROC-AUC: 0.9201, PR-AUC: 0.4791
+Run_Time: 244.571
+--------------------------------------
+Epoch 43
+Train Loss: 0.0662
+Validation Loss: drug_rec: 0.3403, diag_pred: 0.3587
+=== Task: drug_rec ===
+F1: 0.6619, Jaccard: 0.4946, ROC-AUC: 0.9236, PR-AUC: 0.7522
+=== Task: diag_pred ===
+F1: 0.4446, Jaccard: 0.2858, ROC-AUC: 0.9201, PR-AUC: 0.4794
+Run_Time: 243.369
+--------------------------------------
+Epoch 44
+Train Loss: 0.0661
+Validation Loss: drug_rec: 0.3420, diag_pred: 0.3605
+=== Task: drug_rec ===
+F1: 0.6614, Jaccard: 0.4941, ROC-AUC: 0.9234, PR-AUC: 0.7495
+=== Task: diag_pred ===
+F1: 0.4449, Jaccard: 0.2861, ROC-AUC: 0.9201, PR-AUC: 0.4792
+Run_Time: 244.184
+--------------------------------------
+Epoch 45
+Train Loss: 0.0662
+Validation Loss: drug_rec: 0.3409, diag_pred: 0.3592
+=== Task: drug_rec ===
+F1: 0.6654, Jaccard: 0.4986, ROC-AUC: 0.9240, PR-AUC: 0.7529
+=== Task: diag_pred ===
+F1: 0.4438, Jaccard: 0.2852, ROC-AUC: 0.9203, PR-AUC: 0.4797
+Run_Time: 243.685
+--------------------------------------
+Epoch 46
+Train Loss: 0.0659
+Validation Loss: drug_rec: 0.3388, diag_pred: 0.3591
+=== Task: drug_rec ===
+F1: 0.6642, Jaccard: 0.4973, ROC-AUC: 0.9235, PR-AUC: 0.7520
+=== Task: diag_pred ===
+F1: 0.4461, Jaccard: 0.2871, ROC-AUC: 0.9202, PR-AUC: 0.4798
+Run_Time: 242.782
+--------------------------------------
+Epoch 47
+Train Loss: 0.0661
+Validation Loss: drug_rec: 0.3415, diag_pred: 0.3585
+=== Task: drug_rec ===
+F1: 0.6645, Jaccard: 0.4975, ROC-AUC: 0.9238, PR-AUC: 0.7510
+=== Task: diag_pred ===
+F1: 0.4459, Jaccard: 0.2869, ROC-AUC: 0.9203, PR-AUC: 0.4802
+Run_Time: 243.802
+--------------------------------------
+Epoch 48
+Train Loss: 0.0659
+Validation Loss: drug_rec: 0.3401, diag_pred: 0.3543
+=== Task: drug_rec ===
+F1: 0.6635, Jaccard: 0.4964, ROC-AUC: 0.9235, PR-AUC: 0.7517
+=== Task: diag_pred ===
+F1: 0.4474, Jaccard: 0.2882, ROC-AUC: 0.9203, PR-AUC: 0.4801
+Run_Time: 243.487
+--------------------------------------
+Epoch 49
+Train Loss: 0.0659
+Validation Loss: drug_rec: 0.3395, diag_pred: 0.3570
+=== Task: drug_rec ===
+F1: 0.6644, Jaccard: 0.4975, ROC-AUC: 0.9233, PR-AUC: 0.7515
+=== Task: diag_pred ===
+F1: 0.4452, Jaccard: 0.2863, ROC-AUC: 0.9202, PR-AUC: 0.4797
+Run_Time: 247.970
+--------------------------------------
+Epoch 50
+Train Loss: 0.0656
+Validation Loss: drug_rec: 0.3369, diag_pred: 0.3593
+=== Task: drug_rec ===
+F1: 0.6643, Jaccard: 0.4974, ROC-AUC: 0.9226, PR-AUC: 0.7510
+=== Task: diag_pred ===
+F1: 0.4450, Jaccard: 0.2862, ROC-AUC: 0.9203, PR-AUC: 0.4795
+Run_Time: 242.584
+--------------------------------------

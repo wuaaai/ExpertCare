@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.py[cod]
+
+# IDE
+.idea/
+.vscode/
+
+# OS
+.DS_Store
+
+# Large data — tracked via Git LFS
+*.pkl
+*.pkl.*
+data/drug-DDI.csv
+
+# Checkpoints ignored, except the released best model
+*.ckpt
+!best_model/best_model.ckpt
+
+# Transient run logs
+*_err.log
+*_out.log

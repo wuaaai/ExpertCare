@@ -1,0 +1,6 @@
+model_path: ./best_model/best_model.ckpt
+【Drug Prediction】
+F1:	0.6653 ± 0.0024 &
+Jaccard:	0.4985 ± 0.0027 &
+PR-AUC:	0.7524 ± 0.0020 &
+ROC-AUC:	0.9236 ± 0.0006 &
